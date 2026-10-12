@@ -1,4 +1,4 @@
-# SnapFlix Provider Extensions
+# SnapFlix Provider 
 
 Official repository for custom streaming providers, scrapers, and extensions for the **SnapFlix** app.
 
