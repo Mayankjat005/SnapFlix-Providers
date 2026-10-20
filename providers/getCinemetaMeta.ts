@@ -33,7 +33,7 @@ export type CinemetaMeta = {
 type CinemetaCache = Record<string, CinemetaMeta | Promise<CinemetaMeta | null>>;
 
 type CinemetaState = {
-  __SnapFlixCinemetaCache__?: CinemetaCache;
+  __snapflixCinemetaCache__?: CinemetaCache;
 };
 
 declare const providerGlobal: CinemetaState | undefined;
@@ -54,12 +54,12 @@ function getCache(): CinemetaCache {
       : (globalThis as typeof globalThis & CinemetaState);
 
   if (
-    !state.__SnapFlixCinemetaCache__ ||
-    typeof state.__SnapFlixCinemetaCache__ !== "object"
+    !state.__snapflixCinemetaCache__ ||
+    typeof state.__snapflixCinemetaCache__ !== "object"
   ) {
-    state.__SnapFlixCinemetaCache__ = Object.create(null) as CinemetaCache;
+    state.__snapflixCinemetaCache__ = Object.create(null) as CinemetaCache;
   }
-  return state.__SnapFlixCinemetaCache__;
+  return state.__snapflixCinemetaCache__;
 }
 
 async function resolveTmdbToImdb(

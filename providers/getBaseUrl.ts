@@ -11,7 +11,7 @@ type BaseUrlCache = {
 };
 
 type ProviderState = {
-  __SnapFlixProviderBaseUrlCache__?: BaseUrlCache;
+  __snapflixProviderBaseUrlCache__?: BaseUrlCache;
 };
 
 declare const providerGlobal: ProviderState | undefined;
@@ -22,8 +22,8 @@ function getCache(): BaseUrlCache {
       ? providerGlobal
       : (globalThis as typeof globalThis & ProviderState);
 
-  state.__SnapFlixProviderBaseUrlCache__ ??= { expiresAt: 0 };
-  return state.__SnapFlixProviderBaseUrlCache__;
+  state.__snapflixProviderBaseUrlCache__ ??= { expiresAt: 0 };
+  return state.__snapflixProviderBaseUrlCache__;
 }
 
 async function fetchProviderUrls(): Promise<ProviderUrls> {

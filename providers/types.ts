@@ -261,4 +261,3 @@ export type ProviderContext = {
   /** Existing cookies for this source author and URL; does not open a browser. */
   getCookies?: (url: string) => Promise<Record<string, string>>;
 };
-
