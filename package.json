@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Official streaming providers and scrapers for SnapFlix",
   "license": "ISC",
-  "author": "farhanansari888",
+  "author": "ansarixfarhan",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {

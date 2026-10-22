@@ -5,7 +5,7 @@ const path = require("path");
 
 const rootDir = path.join(__dirname, "..");
 const urlsEndpoint =
-  "https://raw.githubusercontent.com/farhanansari888/SnapFlix-Providers/refs/heads/main/urls.json";
+  "https://raw.githubusercontent.com/ansarixfarhan/SnapFlix-Providers/refs/heads/main/urls.json";
 const nativeFetch = global.fetch;
 
 global.fetch = async (input, init) => {

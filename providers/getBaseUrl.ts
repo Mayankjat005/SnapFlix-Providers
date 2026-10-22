@@ -1,5 +1,5 @@
 const urlsEndpoint =
-  "https://raw.githubusercontent.com/farhanansari888/SnapFlix-Providers/refs/heads/main/urls.json";
+  "https://raw.githubusercontent.com/ansarixfarhan/SnapFlix-Providers/refs/heads/main/urls.json";
 const cacheTtl = 60 * 60 * 1000;
 
 type ProviderUrls = Record<string, { url: string }>;
